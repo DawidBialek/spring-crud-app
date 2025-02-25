@@ -19,14 +19,8 @@ public class BookService {
         books.add(new BookModel("The Catcher in the Rye", 1951));
     }
 
-    public List<BookModel> getAllBooksByLogin(String login) {
-        if (login != null) {
-            return books;
-        }
-
-        return books.stream()
-                .filter(book -> book.getYear() > 1951)
-                .toList();
+    public List<BookModel> getBooks() {
+        return books;
     }
 
     public void save(BookModel book) {
@@ -49,9 +43,4 @@ public class BookService {
     public void delete(String title) {
         findByTitleAndDelete(title);
     }
-
-//    public BookModel findByTitle(String title) {
-//        return books.stream().filter(it -> it.getTitle().equals(title))
-//                .findFirst().orElseThrow(IllegalArgumentException::new);
-//    }
 }

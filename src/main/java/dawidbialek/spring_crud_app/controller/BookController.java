@@ -35,7 +35,7 @@ public class BookController {
 
         model.addAttribute("userLogin", userLogin);
 
-        List<BookModel> books = bookService.getAllBooksByLogin(login);
+        List<BookModel> books = bookService.getBooks();
 
         model.addAttribute("userBooks", books);
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
 <head>
     <meta charset="UTF-8">
     <title>Books</title>
@@ -8,7 +8,9 @@
 <body>
 <div th:insert="~{parts/navigation::navigation}"></div>
 <h1>Welcome to the book page <span th:text="${userLogin}"></span></h1>
-
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="Logout">
+</form>
 <table>
     <tr>
         <th>Title</th>
