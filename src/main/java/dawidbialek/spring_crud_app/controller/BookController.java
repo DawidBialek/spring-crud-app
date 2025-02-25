@@ -1,10 +1,9 @@
 package dawidbialek.spring_crud_app.controller;
 
-import dawidbialek.spring_crud_app.Service.BookService;
+import dawidbialek.spring_crud_app.service.BookService;
 import dawidbialek.spring_crud_app.model.BookModel;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
-import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

@@ -1,4 +1,4 @@
-package dawidbialek.spring_crud_app.Service;
+package dawidbialek.spring_crud_app.service;
 
 import dawidbialek.spring_crud_app.model.BookModel;
 import org.springframework.stereotype.Service;
